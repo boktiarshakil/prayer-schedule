@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নামাজের সময়সূচী</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>নামাজের সময়সূচী</h1>
+        
+        <section id="prayer-times">
+            <h2>জামাতের নামাজের সময় দিন</h2>
+            <form id="prayer-form">
+                <div class="time-input">
+                    <label for="prayer-time-1">সময় ১:</label>
+                    <input type="time" id="prayer-time-1" required>
+                </div>
+                <div class="time-input">
+                    <label for="prayer-time-2">সময় ২:</label>
+                    <input type="time" id="prayer-time-2">
+                </div>
+                <div class="time-input">
+                    <label for="prayer-time-3">সময় ৩:</label>
+                    <input type="time" id="prayer-time-3">
+                </div>
+                <div class="time-input">
+                    <label for="prayer-time-4">সময় ৪:</label>
+                    <input type="time" id="prayer-time-4">
+                </div>
+                <div class="time-input">
+                    <label for="prayer-time-5">সময় ৫:</label>
+                    <input type="time" id="prayer-time-5">
+                </div>
+                <button type="submit">সংরক্ষণ করুন</button>
+            </form>
+        </section>
+        
+        <section id="schedule">
+            <h2>দিনের সময়সূচী</h2>
+            <div id="schedule-container">
+                <!-- সময়সূচী এখানে প্রদর্শিত হবে -->
+            </div>
+        </section>
+        
+        <section id="tasks">
+            <h2>টাস্ক ও অভ্যাস</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="টাস্কের নাম" required>
+                <input type="number" id="task-duration" placeholder="মিনিটে" required>
+                <button type="submit">যোগ করুন</button>
+            </form>
+            <div id="task-list">
+                <!-- টাস্কের তালিকা এখানে প্রদর্শিত হবে -->
+            </div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
